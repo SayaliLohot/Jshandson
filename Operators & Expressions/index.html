@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaions & Expressions</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Operaions & Expressions</h1>
+    <section>
+      <h3 class="questions">Add two Numbers</h3>
+      <pre class="code">
+const AddTwoNumbers = (a,b) => {
+            return (a+b);
+        };        
+    </pre
+      >
+
+      <h3 class="questions">Find if the conditions are obeyed or not?</h3>
+      <pre class="code">
+const Is_Valid = (a,b) => {
+            if (a<10 & a>b)
+            {
+              return "true";
+            }
+            else
+            {
+              return "false";
+            }
+          };
+    </pre
+      >
+
+      <h3 class="questions">Check the conditons</h3>
+      <pre class="code">
+const Check = (A, B) => 
+        {
+            if(A%10===0 || B%10===0){
+            return("true");
+            }
+            else
+            {
+              return("false");
+            }
+        };</pre
+      >
+
+      <h3 class="questions">Find the first digit of a 4 digit number</h3>
+      <pre class="code">
+const First_Digit = (n) => {
+        while (n >= 10)
+               n /= 10;
+          
+           return Math.floor(n);
+        };
+</pre
+      >
+
+      <h3 class="questions">Find the last digit of a 4 digit number</h3>
+      <pre class="code">
+const Last_Digit = (n) => {
+        return Math.floor(n%10);
+        };
+    </pre
+      >
+
+      <h3 class="questions">Find the remainder</h3>
+      <pre class="code">
+const Find_the_remainder = (a,b) => {
+            return(b%a);
+        };
+    </pre
+      >
+
+      <h3 class="questions">Multipy two Numbers</h3>
+      <pre class="code">
+const Multiply_two_number = (a,b) => {
+            return a*b;
+        };        
+    </pre
+      >
+
+      <h3 class="questions">Marks Calculator</h3>
+      <pre class="code">
+const Sum = (A, B, C) => 
+       {
+         return A+B+C;
+       };
+
+const Average = (A, B, C) => 
+      {
+         return (A+B+C)/3;
+      };
+    </pre
+      >
+    </section>
+  </body>
+</html>
