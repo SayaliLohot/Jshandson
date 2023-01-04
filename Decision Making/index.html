@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Making</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Decision Making</h1>
+    <section>
+      <h3 class="questions">Calculator</h3>
+      <pre class="code">
+const Calculator = (A, B, C) => 
+        {
+          switch(A)// values of A may be +, -, *, /, %
+          {
+            case '+':
+              return(B+C);
+              break;
+              case '-':
+              return(B-C);
+              break;
+              case '*':
+              return(B*C);
+              break;
+              case '/':
+              return(B/C);
+              break;
+              case '%':
+              return(B%C);
+              break;
+          }
+        };</pre
+      >
+      <h3 class="questions">
+        Check whether the condition is fulfilled or not?
+      </h3>
+      <pre class="code">
+const Check_divisibility = (N) => {
+        if((N % 6 === 0) && (N % 9 === 0))
+        {
+          return ("Divisible by both");
+        }
+       else
+       {
+         return ("Not Divisible by both");
+       }
+      };
+      </pre>
+      <h3 class="questions">Eligible Voter</h3>
+      <pre class="code">
+const isEligible = (a) => {
+        if (a>=18){
+          return("Eligible for Voting");
+        }
+        else{
+          return("Not Eligible for Voting");
+        }
+     };</pre
+      >
+      <h3 class="questions">Find Relation</h3>
+      <pre class="code">
+const findRelation = (x,y) => {
+        if(x < y){
+    
+        }
+        else{
+          if(x>y)
+          {
+            return x + ' is greater than ' + y;
+          }
+          else(x=y)
+          {
+            return x + ' is equal to ' + y;
+          }
+        }
+        
+    };</pre
+      >
+      <h3 class="questions">Find Grades</h3>
+      <pre class="code">
+const findGrades = (a) => {
+        //a represents marks like f(a) ...values of a
+         var grade = 0;
+        if(a<= 10){
+          grade = 1;
+          //grade E : 1
+        }
+        if(a>=11 && a<=20)
+        {
+            grade = 2;
+          //grade D : 2
+        }
+        if(a>=21 && a<=30)
+        {
+            grade = 3;
+          //grade C :3
+        }
+        if(a>=31 && a<=40)
+        {
+            grade = 4;
+          //grade B : 4
+        }
+        if(a>=41 && a<=50)
+        {
+            grade = 5;
+          //grade A : 5
+        }
+        switch(grade)
+        {
+          case 1:
+          return 'E';
+          break;
+          case 2:
+          return 'D';
+          break;
+          case 3:
+          return 'C';
+          break;
+          case 4:
+          return 'B';
+          break;
+          case 5:
+          return 'A';
+        }
+        };</pre
+      >
+      <h3 class="questions">Get Value</h3>
+      <pre class="code">
+const getValue = (a) => {
+        var c = a;
+        
+          if(c == 'P' || c == 'p')
+          {
+            return 'PrepBytes';
+          }
+          
+           else 
+           if(c == 'Z' || c == 'z')
+          {
+            return 'Zenith';
+          }
+      
+           else 
+           if (c == 'E' || c == 'e')
+          {
+            return 'Expert Coder';
+          }
+      
+          else
+          if(c == 'D' || c == 'd')
+          {
+            return 'Data Structure';
+          }
+      
+      };</pre
+      >
+      <h3 class="questions">Find the maximum out of three numbers.</h3>
+      <pre class="code">
+        const Max_out_of_three = (A,B,C) => {
+        if((A==B) && (A==C))
+          {
+            return -1;
+          }
+          if ((A>B) && (A>C))
+          {
+            return A;
+          }
+          if((B>C) && (B>A))
+          {
+            return B;
+          }
+          if((C>A) && (C>B))
+          {
+            return C;
+          }
+        };</pre
+      >
+      <h3 class="questions">Second Smallest</h3>
+      <pre class="code">
+  if(x > z)
+        {
+          return x;
+        }
+        else
+        {
+          return z;
+        }
+      }
+      
+      if((z > y) && (z > x))
+        if(y > x)
+        {
+          return y;
+        }
+        else
+        {
+          return x;
+        }
+      }
+      };</pre
+      >
+      <h3 class="questions">Check whether the triangle is Acute or Obtuse</h3>
+      <pre class="code">
+        const Triangle_Check = (A,B,C) => {
+            if(A < 90 && B< 90 && C < 90)
+            {
+              return 'acute';
+            }
+            else
+            {
+              return 'obtuse';
+            }
+           };
+    </pre
+      >
+    </section>
+  </body>
+</html>
