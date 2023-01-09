@@ -1,0 +1,16 @@
+.head{
+    margin: auto;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+.questions{
+    color:red;
+}
+.code{
+    font-size: 15px;
+}
+section{
+    background-color: antiquewhite;
+    padding: 5px;
+}
