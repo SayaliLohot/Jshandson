@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Arrays</h1>
+    <section>
+      <h3 class="questions">Find the Product.</h3>
+      <pre class="code">
+        const Find_Prod = (array, N) => 
+        {
+         var product = 1;
+         for(let i=0; i< array.length ; i++)
+         {
+           product = product * array[i];
+         }
+             
+          return product;
+        };</pre
+      >
+      <h3 class="questions">Find the Sum.</h3>
+      <pre class="code">
+        const Find_Sum = (array, N) => 
+        {
+          var sum = 0;
+            for (let i = 0; i< N; i++)
+          {
+            sum += array[i];
+          }
+          return (sum);
+        };
+      </pre>
+
+      <h3 class="questions">Count Occurrences</h3>
+      <pre class="code">
+        const findCount = (N, K, Arr) => 
+        {
+            let count = 0;//count the no.of occurance of K 
+            // now access the every element of array
+            for(i=0; i< N; i++)
+            {
+              if (K === Arr[i])//check current element is equal to K or not
+              {
+               count++;//if its eual hen increase count i.e occurance
+              }
+            }
+          return count;
+        
+        };
+    </pre
+      >
+
+      <h3 class="questions">Even Odd</h3>
+      <pre class="code">
+        const findEvenOdd = (N, Arr) => 
+        {
+            var sumEven = 0;
+            var sumOdd = 0;
+            for(let i= 0;i< Arr.length; i++)
+            {
+              if(Arr[i]%2==0){
+                //even
+                sumEven+= Arr[i];
+              }
+              else{
+                //odd
+                sumOdd+= Arr[i];
+              }
+            }
+        B=[];
+        B[0]=sumEven;
+        B[1]=sumOdd;
+        return B;
+        };</pre
+      >
+
+      <h3 class="questions">Find whether the number is present or not</h3>
+      <pre class="code">
+        const Find_Num = (array,N,M) => 
+        {
+        for(let i =0;i< N; i++){
+          if(M === array[i]){
+            return "YES";
+          }
+        }
+        return "NO";
+        };</pre
+      >
+
+      <h3 class="questions">Higher Age</h3>
+      <pre class="code">
+        const highAge = (N, Arr) => 
+        {
+          var newArr = [];
+          for(let i=0; i<=N;i++){
+            if(Arr[i] >= 18){
+              newArr.push(Arr[i]);
+            }
+          }
+          return newArr;
+        };
+        </pre
+      >
+
+      <h3 class="questions">Increment the Array Elements</h3>
+      <pre class="code">
+        const Inc_Arr = (array,N) => 
+        {
+          var answer = "";
+          for (let i = 0; i< N; i++)
+          {
+            array[i]+=1;
+          }
+        for(let i = 0; i< N; i++)
+        {
+          answer = answer + array[i] + " ";
+        }
+        console.log(answer);
+        };
+         </pre
+      >
+
+      <h3 class="questions">Pass or Fail</h3>
+      <pre class="code">
+        const isAllPass = (N, Arr) => {
+          for(i=0; i< N; i++)
+          {
+            if(Arr[i]< 32){
+              return "NO";
+            }
+          }
+              return "YES";
+      };</pre>
+
+      <h3 class="questions">Unique Color Shirt </h3>
+      <pre class="code">function Unique_Shirts (arr,N) {
+        //create freq array
+        let freq = [];
+        //initialize
+        for(let i=0; i< 1001;i++){
+        freq[i]=0;
+        }
+        //increase count which color occurs
+        for(let i=0;i< N;i++){
+          freq[arr[i]]++;
+        }
+        let ans = 0;
+        for(let i =0;i< 1001;i++)
+          {
+            if(freq[i]==1){
+            ans++;
+           }
+          }
+          return ans;
+        } </pre>
+
+        <h3 class="questions">Min and Max </h3>
+        <pre class="code"> 
+            function arrayMin(arr) {
+            var min = arr[0];
+            for(let i=0;i<arr.length;i++)
+            if(min > arr[i+1]){
+              min = arr[i+1];
+            }
+          return min;
+          }
+          
+          function arrayMax(arr) {
+             var max = arr[0];
+            for(let j=0;j< arr.length;j++)
+            if(max < arr[j+1]){
+              max = arr[j+1];
+            }
+          return max;
+          
+          }</pre>
+        
+        <h3 class="questions">Birthday Game </h3>
+        <pre class="code"> 
+            function Birthday_Game(arr,D ,M) {
+              var ways=0;
+              for(let i=0; i < arr.length-M+1; i++){
+                let sum=0;
+                for(let j=i; j < M+i; j++){
+                  sum+=arr[j];
+                }
+                if (sum === D){
+                  ways++;
+                }
+              }
+              return ways;
+            
+            }</pre>
+    </section>
+  </body>
+</html>
