@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Solving</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Problem Solving</h1>
+    <section>
+      <h3 class="questions">Find the Smaller Angle</h3>
+      <pre class="code">
+        var Minimal_Angle = (h, m) => 
+        {
+               if(h===12){
+            h = 0;
+          }   
+          if(m===60){
+            m = 0;
+            h+=1;
+            if(h>12){
+              h = h-12;
+            }
+          }
+          let hAngle = 0.5*(h*60+m);
+          let mAngle = 6*m;
+          let result = Math.abs(hAngle-mAngle);
+          result = Math.min((360-result),result);
+          return result;
+          
+        };</pre
+      >
+
+      <h3 class="questions">Check whether the year is Leap year or not.</h3>
+      <pre class="code">
+        var Check_Leap = (year) => 
+        {
+         if (year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0)){
+           return "Leap Year";
+         }
+          else{
+            return "Non Leap Year";
+          }
+        
+        };</pre
+      >
+
+      <h3 class="questions">Perfect Number Check.</h3>
+      <pre class="code">
+ 
+        var Perfect_Check = (N) => 
+        {
+             if(N===1){
+                  return "YES";
+                  }
+            else{
+            let sum = 0;
+            for(let i = 1;i< N;i++){
+              if(N%i===0){
+                sum += i;
+              }
+            }
+            if (sum === N){
+              return "YES";
+            }
+            else{
+              return "NO";
+            }
+          }
+                
+        };</pre
+      >
+
+      <h3 class="questions">Reverse a Number.</h3>
+      <pre class="code">
+        var Reverse_Number = (N) => 
+        {
+           N = N.toString();
+          let newNum = 0;
+          let rem = 0;
+             for (let i of N) {
+             rem = N % 10;
+             N = Math.floor(N / 10);
+             newNum = newNum * 10 + rem;
+            }
+          return newNum;
+        };</pre
+      >
+
+      <h3 class="questions">Substring Check.</h3>
+      <pre class="code">
+        var Substring_Check = (S1, S2) => 
+        {
+        // return S1.includes(S2)?"YES":"NO";
+        if(S1.includes(S2)){
+          return "YES";
+        }
+        else{
+          return "NO";
+        }
+        };</pre
+      >
+    </section>
+  </body>
+</html>

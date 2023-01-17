@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Strings</h1>
+    <section>
+      <h3 class="questions">Count Characters</h3>
+      <pre class="code">
+        const countCharacters = (S) => 
+        {
+            var B = [0,0];
+            for(let i in S)
+            {
+              if(S[i]==="A")
+              {
+                B[0]++;
+              }
+              else
+              {
+                if((S[i]==="D")){
+                          B[1]++;
+                }
+              }
+            }
+            return B;
+        };</pre
+      >
+
+      <h3 class="questions">Count the Heads</h3>
+      <pre class="code">
+        var Count_Occ = (s) => 
+        {
+          let n = s.length;
+          let str = s.split("").sort().join("");
+          let ans = "";
+          
+        for(let i=0;i< n;i++){//for character that need to be repeat
+          let count=0;
+          for(let j=0; j< n; j++){
+            if(str[i]===str[j] && i>j){
+              break;
+            }
+            if(str[i]===str[j]){
+              count+=1;
+            }
+          }
+          if(count>1){
+            ans+=str[i]+count;
+          }
+        }
+        return ans;
+            
+        };</pre
+      >
+
+      <h3 class="questions">Count the Vowels</h3>
+      <pre class="code">
+        var Count_Vowels= (S) => 
+        {
+          let count =0;
+          const vowel =['a','e','i','o','u','A','E','I','O','U']
+          for(let i of S){
+            if(vowel.includes(i)){
+              count++;
+            }
+          }
+          return count;
+        };</pre
+      >
+
+      <h3 class="questions">Concatenate the Strings</h3>
+      <pre class="code">
+        var Concatenate_Strings = (S1, S2) => 
+        {
+              return S1 + S2;
+        };</pre
+      >
+
+      <h3 class="questions">Find Length</h3>
+      <pre class="code">
+        const findLength = (S) => 
+        {
+            return(S.length);
+        };
+         </pre
+      >
+
+      <h3 class="questions">Find the Winner</h3>
+      <pre class="code">
+        var Game_Winner = (S) => {
+        let countA=0;
+          let countD=0;
+          for(let i=0;i< S.length;i++) {
+            if(S[i]==='A') {
+              countA+=1;
+              
+            }
+            else {
+              countD+=1;
+            }
+          }
+          if(countA>countD) {
+            return "Aditya";
+          }
+          else if(countA< countD) {
+            return "Danish";
+            
+          }
+          else {
+            return "Draw";
+          }
+        };</pre
+      >
+
+      <h3 class="questions">Join Strings</h3>
+      <pre class="code">
+        const joinStrings = (S, P) => 
+        {
+            return (S+P);
+        };</pre
+      >
+
+      <h3 class="questions">Plaindrome Check</h3>
+      <pre class="code">
+        var Palin_Check = (str) =>
+        {//S = Naman, naman
+        let revstr = "";
+        let N = str.length;
+             for (let i=N-1; i>=0; i--)
+             {
+               if(revstr += str[i])
+               //i=4, revstr=n
+             if (str === revstr)
+             {
+               return "True";
+             }
+            }
+                   return "False";
+        
+        };</pre
+      >
+
+      <h3 class="questions">Reverse the String</h3>
+      <pre class="code">
+        var Reverse_String = (str) => 
+        {
+           var newString = "";
+            for (let i = str.length - 1; i >= 0; i--) {
+                newString += str[i];
+            }
+            return newString;  
+        };</pre
+      >
+
+      <h3 class="questions">Match the Strings</h3>
+      <pre class="code">
+        var String_Match = (S1,S2) => 
+        {
+         
+              if (S1.length === S2.length)
+              {
+                return "YES";
+              }
+              else
+              {
+                return "NO";
+              }
+        };</pre
+      >
+
+      <h3 class="questions">String Replace</h3>
+      <pre class="code">
+        var Replace = (S, pattern , text) => 
+        {
+              return S.replace(pattern,text);
+        };
+         </pre
+      >
+
+      <h3 class="questions">Split the String</h3>
+      <pre class="code">
+        var Split_the_string = (S) => 
+        {
+          let split = S.split();
+          return split;
+                
+        };</pre
+      >
+
+      <h3 class="questions">Count the Vowels and Consonants</h3>
+      <pre class="code">
+        var Count_Vowels= (S) => 
+        {
+          let count =0;
+          const vowel =['a','e','i','o','u','A','E','I','O','U'];
+          for(let i of S){
+            if(vowel.includes(i)){
+              count++;
+            }
+          }
+          return count;   
+        };
+        var Count_Consonants= (S) => 
+        {
+          let count =0;
+          const vowel =['a','e','i','o','u','A','E','I','O','U']
+          for(let i of S){
+            if(vowel.includes(i)){
+            continue;   
+            }
+            else {
+              count++
+            }
+          }
+          return count;  
+        };</pre
+      >
+    </section>
+  </body>
+</html>
